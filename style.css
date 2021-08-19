@@ -1,0 +1,1008 @@
+body{
+	font:14px/1.2 Helvetica Neue, Arial, Helvetica, sans-serif;
+	background:#f5f5f5;
+	margin: 0;
+	padding: 0;
+	color: #222;
+
+}
+
+.container{
+	margin: auto;
+	width: 90%;
+	background: #fff;
+
+	/*border test 
+	border: 1px dashed blue;*/
+	
+
+
+/*	overflow:hidden; */
+}
+
+.container-foot{
+	margin: auto;
+	width: 95%;
+}
+
+
+
+
+section{
+	margin-bottom: 30px
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+a{
+	color:#222;
+	text-decoration: none;
+}
+
+h2{
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-left:20px;
+	color:#00000080;
+}
+
+.blur-h2{
+	text-transform: uppercase;
+	margin-left:0;
+	font-size:12px;
+	font-weight: bold;
+}
+
+
+.blur-text{
+	color:#00000080;
+}
+
+.xem-them{
+	color:rgb(241,77,45);
+	padding-right:10px;
+	text-transform: capitalize;
+}
+
+#sticky-sale{
+	position: fixed;
+	bottom: 30px;
+	right: 10px;
+}
+
+/* Header */
+header{
+	width: 90%;
+	background:#f7452e;
+	font-size:14px;
+	position: sticky;
+	z-index: 999;
+	/* nằm trên sticky inder 100 */
+	top: 0;
+	width: 100%;
+	/*dùng tạm xem size, sau up icon thì xóa 
+	height:140px; */
+}
+
+header .container{
+	background: none;
+}
+
+header a{
+	color:#fff;
+}
+
+header #sub1{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+header li{
+	display: inline;
+	margin-right: -4px;
+	/* negavtive margin tắt space tạo ra từ tab */
+	padding:0 6px;
+
+}
+
+header #sub1 nav a:hover{
+	color:#eee;
+}
+
+header #sub1 nav:first-child li{
+	border-right:2px solid #ffffff50;
+}
+
+header #sub1 nav:first-child li:last-child{
+	border:none;
+}
+
+header #sub1 nav:nth-child(2) li:last-child{
+	border-left:2px solid #ffffff50;
+}
+
+#sub2 > a{
+	height: 100%;
+	margin: auto;
+}
+
+header [src="img/header-icon-left.png"]{
+	height: 100%;
+	object-position: 0 -16px;
+	background: #fe6532;
+
+
+}
+
+header input{
+	padding: 15px 10px;
+	width: 100%;
+	box-sizing: border-box;
+	/* set padding-right để box cover luôn btn */
+	border:none;
+	border-radius: 3px;
+
+}
+
+header .btnfloat{
+	position: relative;
+
+	
+}
+
+header #searchbtn{
+	background:none;
+	border:none;
+	width: 50px;
+	padding:8px 5px;
+	position: absolute;
+	/* dùng .wrapper và abosolute để nổi btn lên box */
+	background: #fa5230;
+	right: 5px;
+	top: 7px;
+	border-radius: 3px;
+
+}
+
+
+header #searchbtn img{
+	height:10px;
+	width:auto;
+	
+}
+
+header .container a:last-child{
+	margin: auto;
+	padding: 20px 0;
+	/* không biết cách align cho <a> tag */
+
+}
+
+
+
+header [src="img/header-cart-white.jpg"]{
+	height: 30px;
+
+}
+
+header #sub2{
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-column-gap: 1em;
+	grid-auto-rows: 80px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+
+
+}
+
+
+
+/* Slideshow*/
+#slideshow{
+	background:#fff;
+	padding-top:20px;
+}
+
+#sub4 {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	column-gap: 0.5em;
+}
+
+#sub4-grid{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 0.5em;
+}
+
+#sub4 img{
+	width: 100%;
+	height: 100%;
+}
+
+#sub4-grid img{
+	height: auto;
+	/*
+	height:100%;
+	không hiểu vì sao height 100% của sub4-grid, img lại lấy full width của cả grid chứ không của riêng ô của nó */
+}
+
+
+
+#sub5 a{
+	display: inline-block;
+	/* biên <a> thành block để cover img và p */
+}
+
+#sub5 li{
+	text-transform: capitalize;
+	
+}
+
+#sub5 p{
+	margin: 0;
+	/* 
+	overflow: hidden;
+	width: 90px;
+	white-space: nowrap; ;
+	text-overflow: ellipsis;
+	 không thể làm dấu ... - khi dùng nowrap*/
+}
+
+/* #sub5 ul p{
+	font-size: 10px;
+	width: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-overflow chỉ work với singline | multi line khó hơn
+
+} */
+
+#sub5 li p:nth-child(3){
+	margin: auto;
+	width: 70px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#sub5 ul{
+	display:grid;
+	grid-template-columns: repeat(10,1fr);
+	text-align: center;
+	column-gap:1em;
+
+}
+
+#sub5 img{
+	width: 40%;
+}
+
+#sub5 a:hover{
+	margin-left:10px;
+	margin-right: 10px;
+}
+
+/* Banner horizontal */
+
+.banner-horizontal img{
+	width: 100%;
+}
+
+
+
+
+/* Sale 50% */
+#sale50 .container{
+	background:#0595d4; 
+	color: rgb(208, 1, 27);
+}
+
+#sale50 h2{
+	color: rgb(208, 1, 27);
+	margin-left: 10px;
+}
+
+#sale50 a{
+	color: rgb(208, 1, 27);
+}
+
+
+#sale50 img[src="img/sale50-top.jpg"] , #sale50 img[src="img/sale50-bottom.jpg"] {
+	width: 100%;
+	display: block;
+	/* để xóa white-space below img */
+}
+
+#sub6{
+	width: 97.2%;
+	margin: auto;
+	/* giải quyết khung background đều | nhưng lỗi khi zoom out */
+	background:#ffebda;
+	display: flex;
+
+}
+
+.sub6-grid:nth-child(2){
+	margin-left: 0.5em;
+}
+
+.sub6-grid div:nth-child(2) img{
+	width: 100%;
+}
+
+
+.sub6-grid div:first-child{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	padding-left:10px;
+	padding-right: 5px;
+
+}
+
+.sub6-grid div:first-child p{
+	align-self: center;
+	/* căn chữ ở giữa vertival */
+	justify-self: self-end;
+	/* justify-self: end không work căn về bên trái, nó chỉ dịch chuyển cả ô đó sang trái | muốn chuyển nội dung thì self-end*/
+}
+
+.sub6-grid div:nth-child(2){
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap:0.1em;
+
+}
+
+/* Danh mục */
+#danh-muc .container{
+	text-transform: capitalize;
+	padding-top: 10px;
+}
+
+#sub7 ul{
+	display: grid;
+	grid-template-columns: repeat(10,1fr);
+	text-align: center;
+	border-left:1px solid #cccccc60;
+	border-bottom:1px solid #cccccc60;
+}
+
+#sub7 a{
+	display: block;
+	width:100%;
+	height: 100%;
+	box-sizing: border-box;
+	/* box-zing để cân bằng với li chứa nó */
+	padding: 15px 10px;
+}
+
+#sub7 a:hover{
+	color:red;
+}
+
+#sub7 p{
+	margin:10px 0 0 0;
+}
+
+#sub7 li{
+	border-top:1px solid #cccccc60;
+	border-right:1px solid #cccccc60;
+	/* giải quyết việc collapse border*/
+	font-size: 1.1em;
+	/*padding: 15px 10px;*/
+}
+
+#sub7 li img{
+	width: 40%;
+
+}
+
+
+/* Flashsale */
+#flashsale .container{
+	padding: 10px;
+}
+
+
+#flashsale .sub6-grid div:first-child{
+	display:grid;
+	grid-template-columns: 1fr 1fr 8fr;
+	padding-left:10px;
+	padding-right: 5px;
+
+}
+
+#flashsale .sub6-grid div:first-child img{
+	align-self: center;
+
+}
+
+#flashsale .sub6-grid div:first-child img:nth-child(1){
+	padding-top:5px;
+}
+
+#flashsale .sub6-grid div:first-child img:nth-child(2){
+	padding-left:20px;
+}
+
+
+
+#flashsale .sub6-grid div:nth-child(2) ul{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	border-top:1px solid #cccccc60;
+
+}
+
+#flashsale .sub6-grid div:nth-child(2){
+	display: inline-block;
+}
+
+
+#flashsale .sub6-grid div:nth-child(2) a{
+	display: inline-block;
+
+}
+
+
+#flashsale .sub6-grid div:nth-child(2) img{
+	width: 100%;
+}
+
+
+
+
+/* Banner 3*/
+#sub8{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+
+#sub8 img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Shopee Mall */
+
+#shopeemall li, #shopeemall p{
+	text-transform: capitalize;
+}
+
+#shopeemall h2{
+	color: rgb(208, 1, 27);
+	font-size:16px;
+	display: inline;
+	margin-left: 0;
+}
+
+
+#shopeemall #sub9-first li{
+	display: inline;
+	margin-right:-4px;
+	padding: 0 6px;
+}
+
+
+#shopeemall #sub9-first li:first-child{
+	border-right:1px solid #ccc;
+}
+
+#shopeemall #sub9-first{
+	display: grid;
+	grid-template-columns:auto 1fr;
+	padding:0 10px;
+}
+
+#shopeemall #sub9-first p{
+	justify-self:end;
+}
+
+#sub9-second{
+	display: grid;
+	grid-template-columns: 2fr repeat(4,1fr);
+	grid-template-rows: 1fr 1fr;
+}
+
+
+#sub9-second a{
+	text-align: center;
+}
+
+#sub9-second a:first-child{
+	grid-row:1/3;
+
+}
+
+#sub9-second a img{
+	height: 180px;
+	width: 180px;
+	object-fit: none;
+}
+
+#sub9-second a:first-child img{
+	width: 100%;
+	height: auto;
+	object-fit: fill;	
+
+}
+
+#sub9-second p{
+	font-size:16px;
+	color:rgb(208, 1, 27) ;
+}
+
+/* Xu hướng tìm kiếm */
+#trend-search .container{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+}
+
+#trend-search .container h2 {
+	grid-column: 1/4;
+}
+
+#trend-search .container > p{
+	grid-column: 4/6;
+	justify-self: end;
+}
+
+
+#trend-search .container div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: start;
+	padding-left: 20px;
+	padding-top: 10px;
+	border-right: 1px solid #cccccc60;
+	border-top:1px solid #cccccc60;
+}
+#trend-search .container div img{
+	width: 90%;
+	grid-row:1/3;
+	grid-column: 2;
+}
+
+#trend-search .container div p{
+	width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+}
+
+#trend-search .container div p:first-child{
+	align-self: end;
+	margin:0;
+}
+
+#trend-search .container div p:nth-child(2){
+	margin:0;
+}
+
+
+
+/* Tìm kiếm hàng đầu */
+#top-search #sub10-first{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items: center;
+}
+
+#top-search #sub10-first >a{
+	justify-self:end;
+}
+
+#top-search #sub10-last{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	border-top:1px solid #cccccc60;
+}
+
+#top-search #sub10-last > div{
+	border-right:1px solid #cccccc60;
+	padding-left: 10px;
+}
+
+#top-search #sub10-last > div:last-child{
+	border-right:none;
+	padding-left: 10px;
+}
+
+#top-search #sub10-last p{
+	font-size:18px;
+	color:#00000080;
+}
+
+#top-search #sub10-last img{
+	width: 80%;
+
+}
+
+#top-search #sub10-img{
+	display: grid;
+	grid-template-columns:2fr 1fr;
+}
+
+#top-search #sub10-img img:first-child{
+	grid-row: 1/3;
+}
+
+
+
+/* Gợi ý */
+#goi-y{
+	position: sticky;
+	top:154px;
+	z-index:1;
+	/* nằm dưới Header - index 999*/
+	width: 100%;
+	/* ma đạo, mình không hiểu cách hoạt động sticky, dùng để sticky cả 2 element */
+}
+
+#goi-y .container{
+	display: flex;
+}
+
+#goi-y .container h2{
+	margin: 0;
+	padding: 20px 40px;
+	border-bottom: 4px solid rgb(238, 77, 45);
+	color: rgb(238, 77, 45);
+}
+
+#goi-y .container a{
+	align-self: center;
+	margin-left:40px;
+}
+
+ 
+#goi-y .container img{
+	width: 60%;
+	object-fit: contain;
+
+}
+
+
+/* Main-product */
+#main-product{
+	margin-bottom: 0;
+	/* reset section tạo khoảng trống cho gợi ý sticky chạy */
+}
+
+#main-product a:hover{
+	padding: 10px;
+}
+
+#main-product .container{
+	background: none;
+	padding-bottom: 100px;
+}
+#sub11{
+	display: grid;
+	grid-template-columns: repeat(6,minmax(0,1fr));
+	grid-gap: 10px;
+	/* minmax() hoạt động như thế nào có thể chống lại grid phóng to theo img */
+}
+
+#sub11 > li{
+	background: #fff;
+}
+
+#sub11-first{
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+#sub11-second{
+	display: flex;
+	flex-direction: column;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#sub11-third-1{
+	display: flex;
+	flex-direction: column;
+}
+
+#sub11-third-1 >p{
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* copy từ Shopee, quá nhiều thứ @@ để tạo ra multi line ellipsis */
+}
+
+
+#sub11-third-1 img{
+	/* tà đạo vì img vào flex chiếm 100%, không biết set kích thước cho flex*/
+	width: 60px;
+
+}
+
+#sub11-third-2{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+#sub11-third-2 p:last-child{
+}
+
+
+/* answer */
+
+#answer .container-foot a{
+	color:blue;
+	text-decoration: underline;
+}
+
+#answer{
+	background: #fff;
+	border-top:4px solid rgb(238, 77, 45);
+	padding-top: 30px;
+	margin-bottom:0;
+	font-size:13px;
+}
+
+#answer .container-foot{
+	padding-bottom: 50px;
+	border-bottom: 0.5px solid #ccc;
+}
+
+/* Danh mục foot */
+#index{
+	padding:50px 0;
+	background: #fff;
+	margin:0;
+}
+
+#index .container-foot  >h2{
+	margin-top: 0;
+	font-size:14px;
+	text-transform: capitalize;
+	font-weight: bold;
+	margin-left: 0;
+
+}
+
+
+#sub12-child{
+	/* để wrap bên trong các list item */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+#sub12-child li{
+	border-right:0.5px solid #00000080;
+	font-size: 11px;
+	padding:0 4px;
+	margin-bottom:3px;
+
+}
+
+#sub12 li a{
+	color:black;
+	text-decoration: none;
+	color:#00000080;
+}
+
+#sub12 li a:hover{
+	color:rgb(241,77,45);
+}
+
+#sub12-child li:last-child{
+
+	border-right:none;
+}
+
+#sub12{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* muốn cho các column dồn lên chứ strecth sẽ làm column full width */
+
+}
+
+
+#sub12 >li{
+	flex-basis:19%;
+
+}
+
+
+/* info */
+#info{
+	background: #ffffff80;
+}
+
+#info{
+	margin-bottom: 0;
+}
+
+#sub13{
+	display: flex;
+	font:11px;
+	justify-content: space-between;
+	padding:30px 0;
+}
+
+#sub13 li{
+	margin:10px 0;
+}
+
+#sub13 > div{
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	text-transform: capitalize;
+	flex-basis: 100%;
+	margin-left:10px;
+
+}
+
+
+#sub13 li a{
+	color:black;
+	text-decoration: none;
+	color:#00000080;
+}
+
+#sub13 li a:hover{
+	color:rgb(241,77,45);
+}
+
+
+#sub13-second, #sub13-second > div{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#sub13-second > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+#sub13-second > div > div  img{
+	flex-basis: 30%;
+	margin: 4px 0;
+}
+
+#sub13 div:nth-child(4) p{
+	display: inline-block;
+	position: relative;
+	bottom: 10px;
+	left: 10px;
+	/* tà đạo, set position căn giữa p trong <a> */
+	margin:0;
+}
+
+#sub13 div:nth-child(4) img{
+	height: 30px; 
+}
+
+
+#sub13 div:nth-child(5) > div{
+	display: flex;
+}
+
+#sub13 div:nth-child(5) > div > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left:10px;
+}
+
+
+#sub13 div:nth-child(5) > div img{
+	width: 100%;
+}
+
+
+#sub13 div:nth-child(5) > div > div img{
+	width: 100%;
+}
+
+
+/* mục country */
+#country{
+	background: #ffffff80;
+	margin-bottom: 0;
+}
+
+#country a{
+	color:#00000080;
+}
+
+#country .container-foot{
+	padding:30px 0;
+	border-top:1px solid #ccc;
+	display: flex;
+	justify-content: space-between;
+}
+
+#country li{
+	display: inline;
+	margin-left:-4px;
+	padding:0px 4px;
+	border-right:1px solid #ccc;
+}
+
+#country li:first-child, #country li:last-child{
+	border:none;
+}
+
+
+/* footer */
+footer{
+	background: #e6e6e6;
+	padding:20px 0;
+}
+
+footer > div {
+	margin:auto;
+	text-align: center;
+}
+
+footer ul{
+	margin:0;
+	padding:30px 0;
+}
+
+footer li{
+	display: inline;
+	text-transform: uppercase;
+	margin-right: -4px;
+	padding:0 20px;
+	border-right:1px solid #ccc; 
+}
+
+footer li:last-child{
+	border-right:none;
+}
+
+
+footer img{
+	padding:20px 40px;
+}
+
+footer div:nth-child(3){
+	padding-bottom: 20px;
+}
+
+footer p:last-child{
+	margin-bottom: 0;
+}
+
+footer p{
+	font-size: 12px;
+}
+
+/
+@media (max-width: 1300px){
+	#sub5 ul p:nth-child(3){
+		width: initial;
+		overflow: visible;
+		white-space: normal;
+	}
+}
+
